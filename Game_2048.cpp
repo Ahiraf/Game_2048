@@ -6,7 +6,7 @@ struct Game2048{
     bool has_game_ended(){
         for(int i=0;i<4;i++){
             for(int j=0;j<4;j++){
-               if ((board[i][j]==0 || (i < 3 && board[i][j] != board[i + 1][j]) || (j < 3 && board[i][j] != board[i][j + 1]))) {
+               if ((board[i][j]==0 || (i < 3 && board[i][j] == board[i + 1][j]) || (j < 3 && board[i][j] == board[i][j + 1]))) {
                  return false;
                 }
             }
@@ -163,7 +163,7 @@ int main(){
      while(1){
         mygame.printboard();
         if(mygame.has_won()){
-            cout<<"Kudos you have won the game!\n"; 
+            cout<<"Kudos you have won the game!\n";
             return 0;
         }
         cout<<"Which move?(L,D,R,U)";
@@ -184,6 +184,7 @@ int main(){
         }
         else{
             cout<<"Invalid\n";
+            continue;
         }
         if(ended){
             mygame.printboard();
@@ -193,4 +194,3 @@ int main(){
      }
     return 0;
 }
-
