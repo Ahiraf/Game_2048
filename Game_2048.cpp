@@ -90,7 +90,7 @@ struct Game2048{
                board[row][col]=arr[3-row];
             }
         }
-             move_end();
+    return move_end();
     }
     bool down(){
         for(int col=0;col<4;col++){
@@ -103,8 +103,7 @@ struct Game2048{
                board[row][col]=arr[row];
             }
         }
-            move_end();
-
+    return    move_end();
     }
     bool left(){
         for(int row=0;row<4;row++){
@@ -117,7 +116,7 @@ struct Game2048{
                board[row][col]=arr[3-col];
             }
         }
-             move_end();
+    return    move_end();
 
     }
     bool right(){
@@ -131,7 +130,7 @@ struct Game2048{
                board[row][col]=arr[col];
             }
         }
-            move_end();
+    return    move_end();
     }
     void printboard(){
         for(int i=0;i<4;i++){
@@ -166,10 +165,10 @@ int main(){
             cout<<"Kudos you have won the game!\n";
             return 0;
         }
-        cout<<"Which move?(L,D,R,U)";
+        cout<<"Which move?(L,D,R,U)"<<" ";
         char ch;
         cin>>ch;
-        int ended;
+        bool ended=false;
         if(ch=='U'){
             ended=mygame.up();
         }
