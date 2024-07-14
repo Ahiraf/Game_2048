@@ -1,12 +1,23 @@
 #include<bits/stdc++.h>
 using namespace std;
+void invalid(char ch){
+    while(true) {
+        if(ch>='a' && ch<='d') {
+            break;
+        } else {
+            cout << "Invalid input. Please select a valid option.\n";
+            cin>>ch;
+            invalid(ch);
+        }
+    }
+}
 void gryffindor(){
-    cout<<"Congratulations ! Welcome to GRYFFINDOR HOUSE.";
+     cout<<"Congratulations ! Welcome to GRYFFINDOR HOUSE.";
     cout<<" You've been sorted into the House";
     cout<<" of bravery and resourcefulness, Where dwell the brave at heart, Their daring,nerve and chivalry Set Gryffindors apart.\n";
 }
 void slytherin(){
-    cout<<" Congratulations! Welcome to SLYTHERIN HOUSE";
+     cout<<" Congratulations! Welcome to SLYTHERIN HOUSE";
     cout<<" Being sorted in this House means you are one of the elites and will prove it over time.";
     cout<<" Being in this House means you'll become a strategist and will be proficient in whatever field you may choose to your own liking.";
     cout<<" So, Congrats in also ending up in a House that is loyal to its students. It is now up to you on how to use, plan and gain knowledge for whatever you aspire to be in the future.\n";
@@ -18,7 +29,7 @@ void hufflepuff(){
     cout<<" but which, when provoked, can fight off animals much larger than itself, including wolves.\n";
 }
 void ravenclaw(){
-    cout<<"Congratulations! Welcome to RAVENCLAW HOUSE.";
+ cout<<"Congratulations! Welcome to RAVENCLAW HOUSE.";
     cout<<" Our emblem is the eagle, which soars where others cannot climb.";
     cout<<" Well done on becoming a member of the cleverest, quirkiest and most interesting house at Hogwarts\n";
 }
@@ -26,19 +37,21 @@ void ravenclaw(){
 int main(){
     char c;
     int g=0,s=0,h=0,r=0;
-    cout<<"Pick one option from the followings to describe yourself:\n";
-    cout<<"a)Brave"<<" "<<"b)Determined"<<" "<<"c)Patience"<<" "<<"d)Clever"<<"\n";
-    cin>>c;
-    if(c=='a')g++;
-    else if(c=='b')h++;
-    else if(c=='c')r++;
-    else{
-       s++;
-    }
-    cout<<"What's your favorite color\n";
-    cout<<"a)Red"<<" "<<"b)Green"<<" "<<"c)Yellow"<<" "<<"d)Blue"<<"\n";
-    cin>>c;
-    if(c=='a')g++;
+  cout<<"Pick one option from the followings to describe yourself:\n";
+  cout<<"a)Brave"<<" "<<"b)Determined"<<" "<<"c)Patience"<<" "<<"d)Clever"<<"\n";
+  cin>>c;
+  invalid(c);
+  if(c=='a')g++;
+  else if(c=='b')h++;
+  else if(c=='c')r++;
+  else{
+    s++;
+  }
+  cout<<"What's your favorite color\n";
+  cout<<"a)Red"<<" "<<"b)Green"<<" "<<"c)Yellow"<<" "<<"d)Blue"<<"\n";
+  cin>>c;
+  invalid(c);
+  if(c=='a')g++;
   else if(c=='b')s++;
   else if(c=='c')h++;
   else{
@@ -47,6 +60,7 @@ int main(){
   cout<<"Choose a character to spend the day with.\n";
   cout<<"a)Albus Dumbledore"<<" "<<"b)Draco Malfoy"<<" "<<"c)Cedric Diggory"<<" "<<"d)Luna Lovegood"<<"\n";
   cin>>c;
+  invalid(c);
   if(c=='a')g++;
   else if(c=='b')s++;
   else if(c=='c')h++;
@@ -59,6 +73,7 @@ int main(){
   cout<<"c)I would own Salazar Slytherin's Locket because it symbolizes ambition and the ability to achieve great things.\n";
   cout<<"d)I would own the Sword of Gryffindor because it represents bravery and courage in the face of danger.\n";
   cin>>c;
+  invalid(c);
   if(c=='a')r++;
   else if(c=='b')h++;
   else if(c=='c')s++;
@@ -68,6 +83,7 @@ int main(){
   cout<<"What's your favorite animal?\n";
   cout<<"a)Lion"<<" "<<"b)Snake"<<" "<<"c)Badger"<<" "<<"d)Eagle"<<"\n";
   cin>>c;
+  invalid(c);
   if(c=='a')g++;
   else if(c=='b')s++;
   else if(c=='c')h++;
@@ -77,6 +93,7 @@ int main(){
   cout<<"If you had the opportunity to learn any new skill instantly, what would it be?\n";
   cout<<"a)I would instantly learn how to master persuasion or business strategy."<<" "<<"b)I would instantly learn how to become an expert in herbal medicine or baking"<<" "<<"c)I would instantly learn how to master sword fighting or extreme sports."<<" "<<"d)I would instantly learn how to master a new language or advanced mathematics.\n";
   cin>>c;
+  invalid(c);
   if(c=='a')s++;
   else if(c=='b')h++;
   else if(c=='c')g++;
@@ -86,6 +103,7 @@ int main(){
   cout<<"How do you react in crisis situation?\n";
   cout<<"a)Fighting bravely"<<" "<<"b)Taking the fair and just approach"<<" "<<"c)Taking calculated approach often looking for ways to turn it into advantage"<<" "<<"d)Analyzing situation with logic before making any decision\n";
   cin>>c;
+  invalid(c);
   if(c=='a')g++;
   else if(c=='b')h++;
   else if(c=='c')s++;
@@ -95,6 +113,7 @@ int main(){
   cout<<"Choose an element.\n";
   cout<<"a)Fire"<<" "<<"b)Water"<<" "<<"c)Earth"<<" "<<"d)Air"<<"\n";
   cin>>c;
+  invalid(c);
   if(c=='a')g++;
   else if(c=='b')s++;
   else if(c=='c')h++;
@@ -104,6 +123,7 @@ int main(){
   cout<<"Pick a random item\n";
   cout<<"a)Golden Snitch"<<" "<<"b)Locket"<<" "<<"c)House Plant"<<" "<<"d)Book"<<"\n";
   cin>>c;
+  invalid(c);
   if(c=='a')g++;
   else if(c=='b')s++;
   else if(c=='c')h++;
@@ -113,6 +133,7 @@ int main(){
   cout<<"How do you enjoy spending your free time?\n";
   cout<<"a)Going to the gym"<<" "<<"b)Playing video games"<<" "<<"c)Hanging with your friends"<<" "<<"d)Reading a book"<<"\n";
   cin>>c;
+  invalid(c);
   if(c=='a')g++;
   else if(c=='b')s++;
   else if(c=='c')h++;
@@ -122,6 +143,7 @@ int main(){
   cout<<"What's your worst trait?\n";
   cout<<"a)Too reckless"<<" "<<"b)Tends to be sneaky"<<" "<<"c)Often a pushover"<<" "<<"d)Overly strict"<<"\n";
   cin>>c;
+  invalid(c);
   if(c=='a')g++;
   else if(c=='b')s++;
   else if(c=='c')h++;
@@ -134,6 +156,7 @@ int main(){
   cout<<"c)I motivate myself by focusing on the learning process and the knowledge I gain along the way. I set intellectual challenges for myself and take pride in solving problems creatively.\n";
   cout<<"d)I motivate myself by staying dedicated and remembering the people who depend on me. The satisfaction of hard work and the support of my friends and family keep me driven.\n";
   cin>>c;
+  invalid(c);
   if(c=='a')s++;
   else if(c=='b')g++;
   else if(c=='c')r++;
@@ -143,6 +166,7 @@ int main(){
   cout<<"Tell us your ideal setting.\n";
   cout<<"a)Woods"<<" "<<"b)Dungeon"<<" "<<"c)Kitchen"<<" "<<"d)Library"<<"\n";
   cin>>c;
+  invalid(c);
   if(c=='a')g++;
   else if(c=='b')s++;
   else if(c=='c')h++;
@@ -152,6 +176,7 @@ int main(){
   cout<<"Finally, tell us your dream job.\n";
   cout<<"a)Athelete"<<" "<<"b)Politician"<<" "<<"c)Psychologist"<<" "<<"d)Writer"<<"\n";
   cin>>c;
+  invalid(c);
   if(c=='a')g++;
   else if(c=='b')s++;
   else if(c=='c')h++;
@@ -300,7 +325,7 @@ int main(){
             }
             }
     else if(h==r){
-            cout<<"While taking decisions what drives you most?\n";
+                    cout<<"While taking decisions what drives you most?\n";
             cout<<"a)loyalty and a sense fairness that benefit the community as a whole\n";
             cout<<"b)a quest for knowledge and understanding\n";
             cin>>c;
