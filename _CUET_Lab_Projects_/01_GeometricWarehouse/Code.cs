@@ -21,6 +21,10 @@ namespace Labworks
             float radius = Diameter/2;
             return (float)3.1416*radius*radius;
         }
+        public void Display()
+        {
+            Console.WriteLine(Id + "\tCircle\t\tDiameter: " + Diameter);
+        }
     }
 
     // Class representing a Rectangle
@@ -42,6 +46,10 @@ namespace Labworks
         public float Area()
         {
             return Height*Width;
+        }
+        public void Display()
+        {
+            Console.WriteLine(Id + "\tRectangle\tHeight: " + Height + ", Width: " + Width);
         }
     }
 
@@ -89,13 +97,23 @@ namespace Labworks
                     // Listing all shapes
                     Console.WriteLine("Id\tType\t\tDimensions");
                     Console.WriteLine("=================================================");
-                    for (int i = 0; i < circleCount; i++)
+                    
+                   int circleIndex = 0;
+                    int rectangleIndex = 0;
+
+                    // Iterate while there are circles or rectangles left to print
+                    while (circleIndex < circleCount || rectangleIndex < rectangleCount)
                     {
-                        Console.WriteLine(circles[i].Id + "\tCircle\t\tDiameter: " + circles[i].Diameter);
-                    }
-                    for (int i = 0; i < rectangleCount; i++)
-                    {
-                        Console.WriteLine(rectangles[i].Id + "\tRectangle\tHeight: " + rectangles[i].Height + ", Width: " + rectangles[i].Width);
+                        if (circleIndex < circleCount && (rectangleIndex >= rectangleCount || circles[circleIndex].Id < rectangles[rectangleIndex].Id))
+                        {
+                            // Print the circle if its ID is smaller or if there are no rectangles left
+                            circles[circleIndex++].Display();
+                        }
+                        else if (rectangleIndex < rectangleCount)
+                        {
+                            // Print the rectangle if its ID is smaller or if there are no circles left
+                            rectangles[rectangleIndex++].Display();
+                        }
                     }
                 }
                 else if (choice == 4)
