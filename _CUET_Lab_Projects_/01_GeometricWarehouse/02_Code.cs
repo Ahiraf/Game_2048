@@ -74,7 +74,7 @@ namespace Labworks
                 Console.WriteLine("4) Get statistics");
                 Console.WriteLine("5) Exit");
                 Console.Write("Enter your choice: ");
-                int choice = int.Parse(Console.ReadLine());  // Read user choice
+                int choice = int.Parse(Console.ReadLine());  // To Read user choice
 
                 if (choice == 1)
                 {
@@ -101,17 +101,17 @@ namespace Labworks
                    int circleIndex = 0;
                     int rectangleIndex = 0;
 
-                    // Iterate while there are circles or rectangles left to print
+                    // Iterating while there are circles or rectangles left to print
                     while (circleIndex < circleCount || rectangleIndex < rectangleCount)
                     {
                         if (circleIndex < circleCount && (rectangleIndex >= rectangleCount || circles[circleIndex].Id < rectangles[rectangleIndex].Id))
                         {
-                            // Print the circle if its ID is smaller or if there are no rectangles left
+                            //To print the circle if its ID is smaller or if there are no rectangles left
                             circles[circleIndex++].Display();
                         }
                         else if (rectangleIndex < rectangleCount)
                         {
-                            // Print the rectangle if its ID is smaller or if there are no circles left
+                            // To print the rectangle if its ID is smaller or if there are no circles left
                             rectangles[rectangleIndex++].Display();
                         }
                     }
@@ -128,18 +128,18 @@ namespace Labworks
                     float totalRectangleArea = 0;
 
                     // Calculate total area occupied by circles
-                    for (int i = 0; i < circleCount; i++)
+                    for (int i=0;i<circleCount;i++)
                     {
                         totalCircleArea += circles[i].Area();
                     }
 
-                    // Calculate total area occupied by rectangles
-                    for (int i = 0; i < rectangleCount; i++)
+                    // For calculating total area occupied by rectangles
+                    for (int i=0;i<rectangleCount;i++)
                     {
                         totalRectangleArea += rectangles[i].Area();
                     }
 
-                    float totalArea = totalCircleArea + totalRectangleArea;
+                    float totalArea = totalCircleArea+totalRectangleArea;
                     Console.WriteLine("Total area: " + totalArea);
 
                     if (totalArea > 0)
@@ -155,7 +155,7 @@ namespace Labworks
               
                 else if (choice == 5)
                 {
-                    // Exit the program
+                    // To exit the program
                     Console.WriteLine("Exiting the Program.............");
                     break;
                 }
