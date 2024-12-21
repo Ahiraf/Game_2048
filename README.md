@@ -1,8 +1,9 @@
-![winning-2048](https://github.com/user-attachments/assets/38ad33ca-a3e2-480e-bec8-f06687c0c1c0)# Game 2048
+### Game 2048
 
 A console-based implementation of the popular 2048 game, built with C++. This project simulates the core gameplay mechanics, including tile merging, random tile generation, and win/lose conditions.
 
 
+![winning-2048](https://github.com/user-attachments/assets/38ad33ca-a3e2-480e-bec8-f06687c0c1c0)
 ![Uplo<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
     <!-- Background -->
     <rect width="400" height="400" fill="#bbada0"/>
