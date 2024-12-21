@@ -53,54 +53,45 @@ Each function performs the respective swipe operation on the board.
 ---
 
 
-🚀 Getting Started
-Prerequisites
-Ensure you have a C++ compiler installed.
-For macOS:
-Install the command line tools using:
-bash
-Copy code
-xcode-select --install
-For Windows:
-Install MinGW-w64 (a C++ compiler for Windows) or MSYS2 for a more comprehensive setup. Alternatively, you can use Visual Studio, which includes a C++ compiler.
-MinGW-w64 setup:
-Download and install the MinGW-w64 installer.
-During installation, select the correct architecture (x86_64) and thread model (posix).
-Add the bin directory (e.g., C:\mingw-w64\bin) to your system's PATH variable.
-Steps to Run
-Clone this repository:
+## 🚀 Getting Started
 
-bash
-Copy code
-git clone https://github.com/yourusername/Game_2048.git
-cd Game_2048
-Compile the code:
+### Prerequisites
+- Ensure you have a C++ compiler installed.
+- For **macOS**, install the command line tools using:
+  ```bash
+  xcode-select --install
+  ```
+- For **Windows** ,Install MinGW-w64 (a C++ compiler for Windows) or MSYS2 for a more comprehensive setup. Alternatively, you can use Visual Studio, which includes a C++ compiler.
 
-For macOS/Linux:
-bash
-Copy code
-g++ -std=c++17 -o game2048 Game_2048.cpp
-For Windows (using MinGW):
-bash
-Copy code
-g++ -std=c++17 -o game2048 Game_2048.cpp
+### Steps to Run
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/Game_2048.git
+   cd Game_2048
+   ```
+2. Compile the code:
+   **For macOS/Linux:**
+   ```bash
+   g++ -std=c++17 -o game2048 Game_2048.cpp
+   ```
+   **For Windows(Using MingW)**
+   ```bash
+   g++ -std=c++17 -o game2048 Game_2048.cpp
+   ```
 If you're using Visual Studio, create a new C++ project, add the .cpp file to the project, and build it through Visual Studio's IDE.
 
-Run the game:
-
-For macOS/Linux:
-bash
-Copy code
-./game2048
-For Windows (using MinGW):
-bash
-Copy code
-game2048.exe
-If you're using Visual Studio, you can run the project directly from the IDE.
-
+4. Run the game:
+   **For macOS/Linux**
+   ```bash
+   ./game2048
+   ```
+   **For Windows**
+   ```bash
+   game2048.exe
+    ```
 
 ---
-
 
 
 ## 🎥 Gameplay Demo
@@ -122,7 +113,7 @@ Contributions are welcome! Feel free to submit a pull request or open an issue f
 
 ## ❤️ Acknowledgements
 
-- Inspired by the original [2048 game](https://play2048.co/).
+- Inspired by the original [2048 game](https://2048game.com/).
 - Special thanks to the open-source community for guidance and support.
 
 ---
