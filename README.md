@@ -1,8 +1,52 @@
-# Game 2048
+![winning-2048](https://github.com/user-attachments/assets/38ad33ca-a3e2-480e-bec8-f06687c0c1c0)# Game 2048
 
 A console-based implementation of the popular 2048 game, built with C++. This project simulates the core gameplay mechanics, including tile merging, random tile generation, and win/lose conditions.
 
----
+
+![Uplo<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="400" height="400" fill="#bbada0"/>
+    
+    <!-- Grid cells -->
+    <g>
+        <!-- Row 1 -->
+        <rect x="10" y="10" width="90" height="90" rx="5" fill="#cdc1b4"/>
+        <rect x="110" y="10" width="90" height="90" rx="5" fill="#cdc1b4"/>
+        <rect x="210" y="10" width="90" height="90" rx="5" fill="#cdc1b4"/>
+        <rect x="310" y="10" width="90" height="90" rx="5" fill="#eee4da"/>
+        <text x="355" y="55" text-anchor="middle" font-family="Arial" font-size="24" fill="#776e65">2</text>
+        
+        <!-- Row 2 -->
+        <rect x="10" y="110" width="90" height="90" rx="5" fill="#cdc1b4"/>
+        <rect x="110" y="110" width="90" height="90" rx="5" fill="#eee4da"/>
+        <text x="155" y="155" text-anchor="middle" font-family="Arial" font-size="24" fill="#776e65">4</text>
+        <rect x="210" y="110" width="90" height="90" rx="5" fill="#f3b27a"/>
+        <text x="255" y="155" text-anchor="middle" font-family="Arial" font-size="24" fill="#f9f6f2">128</text>
+        <rect x="310" y="110" width="90" height="90" rx="5" fill="#f65e3b"/>
+        <text x="355" y="155" text-anchor="middle" font-family="Arial" font-size="24" fill="#f9f6f2">256</text>
+        
+        <!-- Row 3 -->
+        <rect x="10" y="210" width="90" height="90" rx="5" fill="#eee4da"/>
+        <text x="55" y="255" text-anchor="middle" font-family="Arial" font-size="24" fill="#776e65">8</text>
+        <rect x="110" y="210" width="90" height="90" rx="5" fill="#f2b179"/>
+        <text x="155" y="255" text-anchor="middle" font-family="Arial" font-size="24" fill="#f9f6f2">64</text>
+        <rect x="210" y="210" width="90" height="90" rx="5" fill="#f65e3b"/>
+        <text x="255" y="255" text-anchor="middle" font-family="Arial" font-size="24" fill="#f9f6f2">512</text>
+        <rect x="310" y="210" width="90" height="90" rx="5" fill="#edcf72"/>
+        <text x="355" y="255" text-anchor="middle" font-family="Arial" font-size="24" fill="#f9f6f2">1024</text>
+        
+        <!-- Row 4 -->
+        <rect x="10" y="310" width="90" height="90" rx="5" fill="#eee4da"/>
+        <text x="55" y="355" text-anchor="middle" font-family="Arial" font-size="24" fill="#776e65">16</text>
+        <rect x="110" y="310" width="90" height="90" rx="5" fill="#f2b179"/>
+        <text x="155" y="355" text-anchor="middle" font-family="Arial" font-size="24" fill="#f9f6f2">32</text>
+        <rect x="210" y="310" width="90" height="90" rx="5" fill="#edcf72"/>
+        <text x="255" y="355" text-anchor="middle" font-family="Arial" font-size="24" fill="#f9f6f2">2048</text>
+        <rect x="310" y="310" width="90" height="90" rx="5" fill="#cdc1b4"/>
+    </g>
+</svg>
+ading winning-2048.svg…]()
+
 
 ## 🎮 How to Play
 
