@@ -1,4 +1,4 @@
-### Game 2048
+##### Game 2048
 
 A console-based implementation of the popular 2048 game, built with C++. This project simulates the core gameplay mechanics, including tile merging, random tile generation, and win/lose conditions.
 
